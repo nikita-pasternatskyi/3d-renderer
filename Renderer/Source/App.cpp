@@ -1,6 +1,6 @@
-#include "app.h"
+#include "App.h"
 
-namespace mp {
+namespace MP {
 
 	void App::Run()
 	{

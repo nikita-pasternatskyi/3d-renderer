@@ -1,8 +1,8 @@
 #pragma once
 
-#include "window\mp_window.hpp"
+#include "Window\MPWindow.h"
 
-namespace mp {
+namespace MP {
 	class App {
 	public:
 		static constexpr int WIDTH = 800;

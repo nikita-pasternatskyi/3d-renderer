@@ -1,18 +1,19 @@
-#include "src\app.h"
+#include "App.h"
 #include <cstdlib>
 #include <iostream>
 #include <stdexcept>
+#include "debug\DebugLog.h"
 
 int main()
 {
-	mp::App app{};
-
-	try {
+	MP::App app{};
+	try 
+	{
 		app.Run();
 	}
 	catch (const std::exception& e)
 	{
-		std::cerr << e.what() << '\n';
+		LOG_ERROR("[ENGINE]::" << e.what());
 		return EXIT_FAILURE;
 	}
 	return EXIT_SUCCESS;
